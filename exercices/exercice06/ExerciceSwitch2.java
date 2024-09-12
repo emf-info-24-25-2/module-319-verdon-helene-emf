@@ -15,8 +15,6 @@ public class ExerciceSwitch2 {
             System.out.println("Inconnu (avec if/else)");
         }
 
-
-
         // essais avec un switch
 
         switch (age) {
@@ -31,7 +29,7 @@ public class ExerciceSwitch2 {
             case 11:
                 System.out.println("Minime (avec un switch)");
                 break;
-            default :
+            default:
                 System.out.println("Inconnu (avec un switch)");
         }
 
