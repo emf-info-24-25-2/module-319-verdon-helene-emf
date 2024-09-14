@@ -21,7 +21,7 @@ public class ExerciceBoucles1 {
             System.out.println("Boucle do while, itération " + c);
         } while (c < 5);
 
-        // essais boucle for en n'affiachant
+        // essais boucle for en n'affichant pas la 3ème itération
         for (int a = 0; a < 6; a++) {
             if (a == 3) {
                 continue;
