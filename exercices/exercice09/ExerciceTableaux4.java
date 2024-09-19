@@ -10,7 +10,10 @@ public class ExerciceTableaux4 {
 
     int [] tableau1;
     tableau1 = new int [5];
-    for (int a = -1; a<tableau1.length; a++){
+    for (int a = 0; a<tableau1.length; a++){
+    
+    
+
 
     }
     
