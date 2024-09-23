@@ -10,14 +10,13 @@ public class devoir02 {
         
         System.out.println("Le remplissage est de " + remplissage);
 
-        System.out.println(remplissage);
 
-        while ((reservoirA < 3) && (reservoirA + reservoirB != remplissage)) {
+        while ((reservoirA < CAPACITE_RESERVOIR_A) && (reservoirA + reservoirB != remplissage)) {
             reservoirA++;
             System.out.println("le reservoir A est à " + reservoirA + " et le reservoir B est à " + reservoirB);
 
         }
-        while ((reservoirB < 5) && (reservoirA + reservoirB != remplissage)) {
+        while ((reservoirB < CAPACITE_RESERVOIR_B) && (reservoirA + reservoirB != remplissage)) {
             reservoirB++;
             System.out.println("Le reservoir A est à " + reservoirA + " et le reservoir B est à " + reservoirB);
 
