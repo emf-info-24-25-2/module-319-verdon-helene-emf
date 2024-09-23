@@ -24,18 +24,23 @@ public class devoir03 {
 
         // déterminer que si le mois est janvier le numero du jour est egal au jour (par
         // exemple le 21 janvier est le jour 21 de l'an)
-        if (mois-1 != 0) {
+        
+            if (annee % 4 == 0) {
+               
+               
+                if (mois-1 != 0) {
 
-            if ((mois-1) % 2 == 0) {
-                numeroDuJour = (((mois - 1) / 2) * moisPair) + (((mois - 1) / 2) * moisImpair) + (jour);
-            } else {
-                numeroDuJour = (((mois - 2) / 2) * moisPair) + (((mois - 2) / 2) * moisImpair) + (moisImpair) + (jour);
+                    if ((mois-1) % 2 == 0) {
+                        numeroDuJour = (((mois - 1) / 2) * moisPair) + (((mois - 1) / 2) * moisImpair) + (jour);
+                    } else {
+                        numeroDuJour = (((mois - 2) / 2) * moisPair) + (((mois - 2) / 2) * moisImpair) + (moisImpair) + (jour);
+                    }
+                    System.out.println(numeroDuJour);
+
+                } else {
+                    System.out.println(jour);
+                }
             }
-            System.out.println(numeroDuJour);
-
-        } else {
-            System.out.println(jour);
-        }
 
        
 
