@@ -1,7 +1,7 @@
 public class devoir03 {
     public static void main(String[] args) {
 
-        /*
+        /* j'avais essayé quelque chose car je voulais essayer avec une boucle au lieu d'un switch mais (j'ai raté masi ne voulais pas tout supprimer)
         int mois;
         int annee;
         int numeroDuJour;
