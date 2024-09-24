@@ -42,16 +42,6 @@ public class devoir03 {
         */
 
 
-
-
-
-
-
-
-
-
-
-
             int jour;
             int mois;
             int annee;
