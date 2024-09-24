@@ -49,7 +49,7 @@ public class devoir03 {
             int moisImpair;
             int fevrier;
     
-            // assignation des  variables
+            // assignation des  variables.
             jour = 23;
             mois = 9;
             annee = 2024;
