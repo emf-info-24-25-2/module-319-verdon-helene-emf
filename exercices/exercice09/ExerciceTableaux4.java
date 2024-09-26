@@ -10,10 +10,12 @@ public class ExerciceTableaux4 {
 
     int [] tableau1;
     tableau1 = new int [5];
-    for (int a = 0; a<tableau1.length; a++){
-    
-    
+   
 
+    for (int i = 0; i < tableau1.length; i++){
+        tableau1 [i] = valeur1 ++;
+        System.out.println(tableau1 [i]);
+    
 
     }
     
