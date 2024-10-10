@@ -15,11 +15,16 @@ public class ExerciceString {
         monPrenom = "Hélène";
 
         for (int i = 0; i < monPrenom.length(); i++ ) {
-            System.out.println( monPrenom.charAt(i));
+            System.out.println( "La lettre à la position " + i + " est : " + monPrenom.charAt(i));
         }
-
-
-
-
+         
+        String texte = "test";
+    
+        
+        if (monPrenom.contains(texte)) {
+            System.out.println("La chaine " + monPrenom + " contient le texte " + texte);
+        } else {
+            System.out.println("La chaine de caractère  " + monPrenom + " ne contient pas le texte " + texte);
+        }
     }
 }
