@@ -14,7 +14,7 @@ public class ExerciceTableaux4 {
 
     for (int i = 0; i < tableau1.length; i++){
         tableau1 [i] = valeur1 ++;
-        System.out.println(tableau1 [i]);
+        System.out.println("Cellule " + i + " : " + tableau1 [i]);
     
 
     }
