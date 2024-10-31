@@ -3,10 +3,13 @@ public class Methodes {
    
    
     public static void main(String[] args) {
-       direBonjour(); 
-
+       //appel de la méthode qui affiche Bonjour
+        direBonjour(); 
+       //appel de la méthode qui affiche le contenu de "texte"
        dire("il fait beau");
 
+
+       //appel et test sur les méthodes Math. dans le main
        int lePlusPetitNombre = Math.min(46, 14);
        System.out.println("Math.min trouve le plus petit chiffre : " + lePlusPetitNombre);
 
@@ -26,7 +29,7 @@ public class Methodes {
 
 
    
-   
+   //méthodes qui ne (retournent rien)
     public static void direBonjour() {
         System.out.println("Bonjour");
     }
