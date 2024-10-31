@@ -2,7 +2,6 @@
 import java.util.Random;
 
 public class methodesTableaux {
-
     public static void main(String[] args) {
       System.out.println("Exercice 1 :");
       int[] tableauMain = creerTableau(5);
@@ -38,6 +37,9 @@ public class methodesTableaux {
       System.out.println("Exercice 8 :");
       int valeur = 15;
       System.out.println("La valeur " + valeur + " se retrouve " +  trouverFrequence(tableauMain,valeur) + " fois dans le tableau.");
+
+      System.out.println("Exercice 9 :");
+      System.out.println("Somme de toutes les valeurs du tableau : " + trouverSomme(tableauMain));
     }
 
 
@@ -101,10 +103,10 @@ public class methodesTableaux {
         }
         System.out.println(valeurMaximum);
         return valeurMaximum;
-     }
+    }
 
-     //8 trouver la fréquence d'une valeur d'un tableau
-     public static int trouverFrequence(int[]tableauMain, int valeur) {
+    //8 trouver la fréquence d'une valeur d'un tableau
+    public static int trouverFrequence(int[]tableauMain, int valeur) {
         int fréquence = 0; 
         for (int i = 0; i < tableauMain.length; i++) {
             if (tableauMain[i] == valeur) {
@@ -113,7 +115,16 @@ public class methodesTableaux {
         }
         return fréquence;
     }
-}
+    
 
+    //9 faire la somme de chaque valeur du tableau
+    public static int trouverSomme(int[] tableauMain) {
+        int somme = 0;
+        for (int i = 0; i < tableauMain.length; i++) {
+           somme += tableauMain[i];
+        }
+        return somme;
+    }
+}
 
 
