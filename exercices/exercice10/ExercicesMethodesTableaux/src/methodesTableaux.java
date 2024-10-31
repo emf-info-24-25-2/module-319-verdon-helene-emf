@@ -52,11 +52,11 @@ public class methodesTableaux {
     }
 
     //2 remplir le tableau avec une valeur fixe
-    public static int[] remplirTableau(int[] tableauMain, int valeur) {
-        for(int i = 0; i < tableauMain.length; i++) {
-            tableauMain[i] = valeur;
+    public static int[] remplirTableau(int[] stroumf, int valeur) {
+        for(int i = 0; i < stroumf.length; i++) {
+            stroumf[i] = valeur;
         }
-        return tableauMain;
+        return stroumf;
     }
 
     //3 remplir le tableau avec des valeurs aléatoires
