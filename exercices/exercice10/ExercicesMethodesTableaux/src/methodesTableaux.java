@@ -1,12 +1,12 @@
 public class methodesTableaux {
     public static void main(String[] args) {
         int[] tableauMain = creerTableau(5);
-        for(int j = 0; 0 < tableauMain.length; j++) {
+        for(int j = 0; j < tableauMain.length; j++) {
             System.out.println(tableauMain[j]);
         }
 
         remplirTableau(tableauMain, 15);
-        for(int k = 0; 0 < tableauMain.length; k++) {
+        for(int k = 0; k < tableauMain.length; k++) {
             System.out.println(tableauMain[k]);
         }
     }
