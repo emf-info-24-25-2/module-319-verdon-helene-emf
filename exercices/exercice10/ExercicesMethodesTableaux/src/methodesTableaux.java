@@ -1,4 +1,3 @@
-
 import java.util.Random;
 
 public class methodesTableaux {
@@ -40,6 +39,10 @@ public class methodesTableaux {
 
       System.out.println("Exercice 9 :");
       System.out.println("Somme de toutes les valeurs du tableau : " + trouverSomme(tableauMain));
+
+      System.out.println("Exercice 10 :");
+      int moyenneTableau = trouverMoyennes(tableauMain);
+      System.out.println("La moyenne du tableau est de : " + moyenneTableau);
     }
 
 
@@ -126,5 +129,16 @@ public class methodesTableaux {
         return somme;
     }
 }
+
+
+//10 Etablir la moyenne des valeurs contenues dans un tableau
+    public static int trouverMoyennes(int[] tableauMain) {
+        int moyenne = 0;
+        for (int i = 0; i < tableauMain.length; i++) {
+            moyenne += tableauMain[i];
+        }
+        moyenne /= tableauMain.length;
+        return moyenne;
+    }
 
 
