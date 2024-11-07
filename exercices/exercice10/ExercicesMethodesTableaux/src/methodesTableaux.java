@@ -139,6 +139,7 @@ public class methodesTableaux {
         }
         moyenne /= tableauMain.length;
         return moyenne;
-    }
+ 
+    }commit
 
 
