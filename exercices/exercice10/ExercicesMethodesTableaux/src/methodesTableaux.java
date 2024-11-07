@@ -41,9 +41,35 @@ public class methodesTableaux {
       System.out.println("Somme de toutes les valeurs du tableau : " + trouverSomme(tableauMain));
 
       System.out.println("Exercice 10 :");
-      int moyenneTableau = trouverMoyennes(tableauMain);
+      double moyenneTableau = trouverMoyennes(tableauMain);
       System.out.println("La moyenne du tableau est de : " + moyenneTableau);
+
+      System.out.println("Exercice 11 :");
+      for (int i = 0; i < tableauMain.length; i++) {
+        System.out.println(tableauMain[i]);
+      }
+      int valeurAvant = 6;
+      int valeurApres = 12;
+      System.out.println("tableauMain avant : ");
+      for (int i = 0; i < tableauMain.length; i++) {
+        System.out.println(tableauMain[i]);
+      }
+      System.out.println("tableauMain après");
+      tableauMain = remplacerValeurTableau(tableauMain, valeurAvant, valeurApres);
+      for (int i = 0; i < tableauMain.length; i++) {
+        System.out.println(tableauMain[i]);
+      }
+
+      System.out.println("Exercice 12 :");
+      int nbrRecherche = 16;
+      int premiereOccurence = recherchePremiereOcurrence(tableauMain, nbrRecherche);
+      if (premiereOccurence >= 0) { 
+        System.out.println("La première occurence du nombre " + nbrRecherche + " dans le tableau est dans la cellule numéro " + premiereOccurence );
+      } else {
+        System.out.println("Le nombre " + nbrRecherche + " n'apparaît pas dans le tableau");
+      }
     }
+
 
 
 
@@ -128,18 +154,47 @@ public class methodesTableaux {
         }
         return somme;
     }
-}
 
-
-//10 Etablir la moyenne des valeurs contenues dans un tableau
-    public static int trouverMoyennes(int[] tableauMain) {
-        int moyenne = 0;
+    //10 Etablir la moyenne des valeurs contenues dans un tableau
+    public static double trouverMoyennes(int[] tableauMain) {
+        double moyenne = 0;
         for (int i = 0; i < tableauMain.length; i++) {
             moyenne += tableauMain[i];
         }
         moyenne /= tableauMain.length;
         return moyenne;
  
-    }commit
+    }
+
+    
+    //11 Remplacer une valeru par une autre dans un tableau
+  
+    public static int[] remplacerValeurTableau (int[]tableauMain, int valeurRechercher, int valeurRemplacement) {
+        for (int i = 0; i < tableauMain.length; i++) {
+            if (tableauMain[i] == valeurRechercher) {
+            tableauMain[i] = valeurRemplacement;
+            }
+        }
+        return tableauMain;
+    }
+
+
+    //12 Rechercher la prmière occurence d'une valeur dans un tableau
+    public static int recherchePremiereOcurrence (int[]tableauMain, int valeurRechercher) {
+        int premiereOccurence = -1;
+        for (int i = 0; i < tableauMain.length; i++) {
+            if (tableauMain[i] == valeurRechercher) {
+                premiereOccurence = i;
+                break;
+            }
+        }
+        return premiereOccurence;
+    }
+
+}
+
+
+
+
 
 
