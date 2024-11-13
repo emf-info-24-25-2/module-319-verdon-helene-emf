@@ -9,6 +9,7 @@ public class devoir06 {
         System.out.println("La plus petite valeur trouvée est : " + min);
         System.out.println("La plus grande valeur trouvée est : " + max);
 
+        //utilisez aussi votre méthode de recherche de valeur
     }
 
     public final static int TAILLE_TABLEAU = 20;
@@ -26,6 +27,7 @@ public class devoir06 {
     }
 
     public static int rechercheMin(int[] tableau) {
+        //pensez à toujours donner des noms de variables avec des minuscules
         int Min = tableau[0];
         for (int i = 0; i < tableau.length; i++) {
             if (tableau[i] < Min) {
