@@ -11,7 +11,8 @@ public class devoir04 {
         int fevrier;
         String realMonth;
 
-        if (year % 4 == 0) {
+        if (year % 4 == 0) { 
+            //RIF: bonne idée de mettre le nombre de jour de ce mois dans une variable. arrivez-vous a tenir compte des années spéciales? (mutliples de 100 et 400)
             fevrier = 29;
         } else {
             fevrier = 28;
