@@ -42,6 +42,7 @@ public class devoir05 {
         // si le nombre est deviné, le dire au joueur et fermer le scanner.
         System.out.print("Bravo, trouvé!");
         System.out.println(" " + "Le nombre à deviner était " + nombreMystere);
+        //RIF: bien! pouvez-vous aussi dire au joueur de combien de tentatives il a eu besoin?
 
         // fermer le scanner
         scanner1.close();
