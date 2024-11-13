@@ -57,7 +57,7 @@ public class devoir03 {
             }
     
             System.out.println("Le " + jour + "/" + mois + "/" + annee + " est le jour " + numeroDuJour + " de l'An.");
-
+            //RIF: bien!
 
 
             /* 
