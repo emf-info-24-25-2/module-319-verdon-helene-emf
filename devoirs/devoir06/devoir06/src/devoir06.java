@@ -9,6 +9,13 @@ public class devoir06 {
         System.out.println("La plus petite valeur trouvée est : " + min);
         System.out.println("La plus grande valeur trouvée est : " + max);
 
+        int valeur1 =12;
+        int index = rechercheValeur(tableau, valeur1);
+        if (index >=0) {
+            System.out.println("La valeur " + valeur1 + " se trouve dans la cellule numéro " + index + ".");
+        } else {
+            System.out.println("La valeur " + valeur1 + " n'apparaît pas dans le tableau.");
+        }
         //utilisez aussi votre méthode de recherche de valeur
     }
 
@@ -28,23 +35,23 @@ public class devoir06 {
 
     public static int rechercheMin(int[] tableau) {
         //pensez à toujours donner des noms de variables avec des minuscules
-        int Min = tableau[0];
+        int min = tableau[0];
         for (int i = 0; i < tableau.length; i++) {
-            if (tableau[i] < Min) {
-                Min = tableau[i];
+            if (tableau[i] < min) {
+                min = tableau[i];
             }
         }
-        return Min;
+        return min;
     }
 
     public static int rechercheMax(int[] tableau) {
-        int Max = tableau[0];
+        int max = tableau[0];
         for (int i = 0; i < tableau.length; i++) {
-            if (tableau[i] > Max) {
-                Max = tableau[i];
+            if (tableau[i] > max) {
+                max = tableau[i];
             }
         }
-        return Max;
+        return max;
     }
 
     public static int rechercheValeur(int[] tableau, int valeurRecherche) {
