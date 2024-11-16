@@ -2,14 +2,16 @@ package devoirs.devoir08;
 
 public class devoir08 {
 
-    public final static String[] CARACTERE = { "a", "b", "c", "d", "e", "f", "g", "h", "i", "j"};
+    public final static String[] CARACTERE = { "a", "b", "c", "d", "e", "f", "g", "h", "i", "j", "k", "l", "m", "n", "o", "p", "q", "r", "s", "t"};
     public final static int TAILLE_MOT_DE_PASSE = 15;
     public final static int NBR_ESSAI = 5;
 
     public final static String genereMotDePasse(int tailleMdp) {
-       String resultat = "";
+        String resultat = "";
         while (resultat.length() < tailleMdp) {
-            int random = ( int ) ( Math.random() * (10 - 0 + 1) + 0);
+            int min = 0;
+            int max = 19;
+            int random = ( int ) ( Math.random() * (max - min + 1) ) + min;
             resultat += CARACTERE[random];
         }
         return resultat;
