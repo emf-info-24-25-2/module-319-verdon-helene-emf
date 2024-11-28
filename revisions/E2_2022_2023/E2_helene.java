@@ -89,7 +89,7 @@ public class E2_helene {
         boolean[] occupationSalle = new boolean[CATEGORIE_SALLE.length];
         int commande = -1;
         while (commande != 0) {
-            System.out.print("--------------------------------------------------");
+            System.out.print("---------------------------------------------------------------------------------------------");
             System.out.println("-");
             System.out.println(
             "1 = Commander un billet, 2 = Afficher les tarifs, 3 = Afficher l'état de la salle, 0 = Quitter");
@@ -115,4 +115,5 @@ public class E2_helene {
     }
 
     }
+
 }
