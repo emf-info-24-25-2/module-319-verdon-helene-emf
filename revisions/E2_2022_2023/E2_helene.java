@@ -60,8 +60,8 @@ public class E2_helene {
     //méthode qui permet de réserver une place, de l'inscrire comme occuppée et d'afficher combien elle va coûter
     public static boolean[] commanderBillet(boolean[] occupationSalle) {
         System.out.print("Quelle catégorie voulez vous : ");
-        Scanner scanner1 = new Scanner(System.in);
-        int categorie = scanner1.nextInt();
+        Scanner scanner = new Scanner(System.in);
+        int categorie = scanner.nextInt();
         if ((categorie == 1) || (categorie == 2) || (categorie == 3)) {
             int positionPlace = trouverPlace(categorie, occupationSalle);
             if (positionPlace != -1) {
@@ -97,8 +97,8 @@ public class E2_helene {
             System.out.println("-");
             System.out.println(
                     "1 = Commander un billet, 2 = Afficher les tarifs, 3 = Afficher l'état de la salle, 0 = Quitter");
-            Scanner scanner2 = new Scanner(System.in);
-            commande = scanner2.nextInt();
+            Scanner scanner = new Scanner(System.in);
+            commande = scanner.nextInt();
             switch (commande) {
                 case 0:
                     System.out.println("Au revoir");
