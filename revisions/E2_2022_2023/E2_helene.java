@@ -17,7 +17,7 @@ public class E2_helene {
     // libres
     public static void afficherSalle(boolean[] occupationSalle) {
         System.out.println("Occupation de la salle :");
-        for (int i = 0; i < CATEGORIE_SALLE.length; i++) {          
+        for (int i = 0; i < CATEGORIE_SALLE.length; i++) {
             if (i == occupationSalle.length - 1) {
                 System.out.println(" " + CATEGORIE_SALLE[i] + " ");
             } else {
@@ -47,7 +47,7 @@ public class E2_helene {
     public static int trouverPlace(int categorie, boolean[] occupationSalle) {
         int index = -1;
         for (int i = 0; i < occupationSalle.length; i++) {
-            if ((CATEGORIE_SALLE[i] == categorie) && !occupationSalle[i] ) {
+            if ((CATEGORIE_SALLE[i] == categorie) && !occupationSalle[i]) {
                 index = i;
                 break;
             } else {
@@ -57,6 +57,7 @@ public class E2_helene {
         return index;
     }
 
+    //méthode qui permet de réserver une place, de l'inscrire comme occuppée et d'afficher combien elle va coûter
     public static boolean[] commanderBillet(boolean[] occupationSalle) {
         System.out.print("Quelle catégorie voulez vous : ");
         Scanner scanner1 = new Scanner(System.in);
@@ -85,35 +86,36 @@ public class E2_helene {
         return occupationSalle;
     }
 
+
+    //main, on reprend toutes les méthodes crées plus tôt
     public static void main(String[] args) {
         boolean[] occupationSalle = new boolean[CATEGORIE_SALLE.length];
         int commande = -1;
         while (commande != 0) {
-            System.out.print("---------------------------------------------------------------------------------------------");
+            System.out.print(
+                    "---------------------------------------------------------------------------------------------");
             System.out.println("-");
             System.out.println(
-            "1 = Commander un billet, 2 = Afficher les tarifs, 3 = Afficher l'état de la salle, 0 = Quitter");
+                    "1 = Commander un billet, 2 = Afficher les tarifs, 3 = Afficher l'état de la salle, 0 = Quitter");
             Scanner scanner2 = new Scanner(System.in);
             commande = scanner2.nextInt();
-        switch (commande) {
-            case 0:
-                System.out.println("Au revoir");
-                break;
-            case 1:
-                occupationSalle = commanderBillet(occupationSalle);
-                break;
-            case 2:
-                afficherTarifs();
-                break;
-            case 3:
-                afficherSalle(occupationSalle);
-                break;
-            default:
-                System.out.println("Commande inconnue");
-                break;
+            switch (commande) {
+                case 0:
+                    System.out.println("Au revoir");
+                    break;
+                case 1:
+                    occupationSalle = commanderBillet(occupationSalle);
+                    break;
+                case 2:
+                    afficherTarifs();
+                    break;
+                case 3:
+                    afficherSalle(occupationSalle);
+                    break;
+                default:
+                    System.out.println("Commande inconnue");
+                    break;
+            }
         }
     }
-
-    }
-
 }
