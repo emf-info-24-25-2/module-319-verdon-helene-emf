@@ -17,21 +17,26 @@ public class E2_helene {
     // libres
     public static void afficherSalle(boolean[] occupationSalle) {
         System.out.println("Occupation de la salle :");
-        for (int i = 0; i < CATEGORIE_SALLE.length; i++) {
-            System.out.print(CATEGORIE_SALLE[i]);
+        for (int i = 0; i < CATEGORIE_SALLE.length; i++) {          
+            if (i == occupationSalle.length - 1) {
+                System.out.println(" " + CATEGORIE_SALLE[i] + " ");
+            } else {
+                System.out.print(" " + CATEGORIE_SALLE[i] + " ");
+            }
         }
+
         for (int i = 0; i < occupationSalle.length; i++) {
             if (occupationSalle[i] == true) {
                 if (i == occupationSalle.length - 1) {
-                    System.out.print("O");
+                    System.out.println(" X ");
                 } else {
-                    System.out.println("O");
+                    System.out.print(" X ");
                 }
             } else {
                 if (i == occupationSalle.length - 1) {
-                    System.out.print("O");
+                    System.out.println(" O ");
                 } else {
-                    System.out.println("O");
+                    System.out.print(" O ");
                 }
             }
         }
@@ -68,7 +73,7 @@ public class E2_helene {
                         System.out.println("Votre place est réservée et coûte " + PRIX_CATEGORIE_DEUX + " CHF");
                         break;
                     case 3:
-                        System.out.println("Votre place est réservée et coûte " + PRIX_CATEGORIE_DEUX + " CHF");
+                        System.out.println("Votre place est réservée et coûte " + PRIX_CATEGORIE_TROIS + " CHF");
                         break;
                 }
             } else {
@@ -87,10 +92,9 @@ public class E2_helene {
             System.out.print("--------------------------------------------------");
             System.out.println("-");
             System.out.println(
-                    "1 = Commander un billet, 2 = Afficher les tarifs, 3 = Afficher l'état de la salle, 0 = Quitter");
-        }
-        Scanner scanner2 = new Scanner(System.in);
-        commande = scanner2.nextInt();
+            "1 = Commander un billet, 2 = Afficher les tarifs, 3 = Afficher l'état de la salle, 0 = Quitter");
+            Scanner scanner2 = new Scanner(System.in);
+            commande = scanner2.nextInt();
         switch (commande) {
             case 0:
                 System.out.println("Au revoir");
@@ -108,6 +112,7 @@ public class E2_helene {
                 System.out.println("Commande inconnue");
                 break;
         }
+    }
 
     }
 }
