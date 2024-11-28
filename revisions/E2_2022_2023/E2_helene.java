@@ -15,20 +15,20 @@ public class E2_helene {
 
     // méthode qui sert à afficher la catégorie et quelle place sont occupées ou
     // libres
-    public static void afficherSalle(boolean occupationSalle) {
+    public static void afficherSalle(boolean[] occupationSalle) {
         System.out.println("Occupation de la salle :");
         for (int i = 0; i < CATEGORIE_SALLE.length; i++) {
-            System.out.print(CATEGORIE_SALLE);
+            System.out.print(CATEGORIE_SALLE[i]);
         }
         for (int i = 0; i < occupationSalle.length; i++) {
             if (occupationSalle[i] == true) {
-                if (i = occupationSalle.length - 1) {
+                if (i == occupationSalle.length - 1) {
                     System.out.print("O");
                 } else {
                     System.out.println("O");
                 }
             } else {
-                if (i = occupationSalle.length - 1) {
+                if (i == occupationSalle.length - 1) {
                     System.out.print("O");
                 } else {
                     System.out.println("O");
@@ -42,7 +42,7 @@ public class E2_helene {
     public static int trouverPlace(int categorie, boolean[] occupationSalle) {
         int index = -1;
         for (int i = 0; i < occupationSalle.length; i++) {
-            if ((CATEGORIE_SALLE[i] == categorie) && (occupationSalle[i] = false)) {
+            if ((CATEGORIE_SALLE[i] == categorie) && !occupationSalle[i] ) {
                 index = i;
                 break;
             } else {
