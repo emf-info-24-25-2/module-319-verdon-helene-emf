@@ -1,1 +1,5 @@
-//Ceci est mon exercice 01
+public class Exercice01 {
+    public static void main(String[] args) {
+        
+    }
+}
